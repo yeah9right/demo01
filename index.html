@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一个简洁的欢迎页面">
+  <title>欢迎</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      background: #f4f7fb;
+      color: #17324d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 15% 20%, #dceafe 0, transparent 32%),
+        radial-gradient(circle at 85% 80%, #e4f7ef 0, transparent 30%),
+        #f4f7fb;
+    }
+
+    main {
+      width: min(100%, 640px);
+      padding: clamp(36px, 8vw, 72px);
+      text-align: center;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(37, 73, 112, 0.14);
+      backdrop-filter: blur(12px);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #176b87;
+      background: #e5f7f8;
+      border-radius: 999px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(36px, 8vw, 64px);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 22px auto 0;
+      max-width: 440px;
+      font-size: clamp(16px, 3vw, 18px);
+      line-height: 1.8;
+      color: #587086;
+    }
+
+    .decoration {
+      margin-top: 32px;
+      font-size: 28px;
+      letter-spacing: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="badge">WELCOME</span>
+    <h1>欢迎来到这里</h1>
+    <p>很高兴与你见面。愿你今天有新的发现，也有愉快的心情。</p>
+    <div class="decoration" aria-hidden="true">✦ · ✦</div>
+  </main>
+</body>
+</html>
